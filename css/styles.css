@@ -149,6 +149,27 @@ a {
     }
 }
 
+/* icons */
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill: var(--color-primary);
+}
+
+/* 这里没用--是因为它不是icon的一个变体，而是跟icon有关的独立的class */
+.icon-container {
+    height: 64px;
+    width: 64px;
+    /* 注意是background */
+    background: #f3f9fa;
+    display: inline-flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
