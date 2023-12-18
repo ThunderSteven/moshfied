@@ -6,6 +6,8 @@
     --color-body: #918ca4;
 }
 
+/* Typography */
+
 html {
     font-size: 62.5%;
 }
@@ -50,5 +52,64 @@ p {
     h3 {
         font-size: 2.4rem;
     }
+}
 
+a {
+    text-decoration: none;
+}
+
+/* links */
+
+.link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after {
+    content: "-->";
+    margin-left: 5px;
+    transition: margin 0.15s;
+
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
+    }
+}
+
+/* Badges */
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    /* 这个很重要！让badge内的文字不提行 */
+    white-space: nowrap;
+}
+
+.badge--primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.badge--secondary {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        font-size: 1.5rem;
+    }
 }
