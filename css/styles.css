@@ -4,6 +4,13 @@
     --color-accent: #ff3400;
     --color-heading: #1b0760;
     --color-body: #918ca4;
+    --color-border: #ccc;
+    --border-radius: 30px;
+}
+
+/* for buttons */
+*, *::after, *::before {
+    box-sizing: border-box;
 }
 
 /* Typography */
@@ -170,6 +177,102 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+/* Buttons */
+
+.btn {
+    border-radius: 40px;
+    border: 0;
+    /* 让button可点击的样子 */
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    margin: 1rem 0;
+    /* 文字居中 */
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.btn--primary:hover {
+    background: #167afc;
+    color: white;
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.btn--secondary:hover {
+    background: #00bbff;
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: white;
+}
+
+.btn--accent:hover {
+    background: #e30000;
+}
+
+.btn--block {
+    display: inline-block;
+    width: 100%;
+}
+
+.btn--outline {
+    background: white;
+    color: var(--color-heading);
+    border: 2px solid var(--color-heading);
+}
+
+.btn--outline:hover {
+    background: var(--color-heading);
+    color: white;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }   
+}
+
+/* inputs */
+
+.input {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-heading);
+    font-size: 2;
+    outline: 0;
+    padding: 1.5rem 3rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.5rem;
+    }    
+}
+
+
 
 
 
