@@ -382,8 +382,23 @@ a {
     }
 }
 
+/* Media */
 
+.media {
+    display: flex;
+}
 
+.media__image {
+    margin-top: 1rem;
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body {
+    margin: 0rem 2rem;
+}
 
 
 
