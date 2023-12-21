@@ -32,6 +32,7 @@ h2,
 h3 {
     color: var(--color-heading);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -244,10 +245,6 @@ a {
     background: #e30000;
 }
 
-.btn--block {
-    display: inline-block;
-    width: 100%;
-}
 
 .btn--outline {
     background: white;
@@ -258,6 +255,16 @@ a {
 .btn--outline:hover {
     background: var(--color-heading);
     color: white;
+}
+
+.btn--stretched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.btn--block{
+    width: 100%;
+    display: inline-block;
 }
 
 @media screen and (min-width: 1024px) {
@@ -519,7 +526,49 @@ a {
       margin-right: 0;
     }
   }
-  
+
+/* Callout */
+.callout {
+    border-radius: 5px;
+    padding: 4rem;
+}
+
+.callout--primary{
+    background: var(--color-primary);
+    color: white;
+}
+
+.callout__heading{
+    margin-top: 0;
+    color: white;
+    font-size: 3rem;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+.callout .btn{
+    /* 默认的对齐方式是stretch，所以btn占满了所有空间 */
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid--1x2  {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__content {
+           text-align: left;
+    }
+
+    .callout .btn{
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
+
 
 @media screen and (min-width: 1024px) {
 
