@@ -651,6 +651,65 @@ a {
     color: white;
 }
 
+/* Navigation Bar */
+
+.nav{
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0 1rem;
+    align-items: center;
+}
+
+.nav__list{
+    width: 100%;
+    margin: 0;
+}
+
+.nav__item > a{
+    color: #d2d0db;
+    border-bottom: 2px solid #222;
+    padding: 0.5rem 2rem;
+    transition: color 0.3s;
+}
+
+.nav__item > a:hover{
+    color: white;
+}
+
+.nav__toggler{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+
+.nav.collapsible--expanded .nav__toggler{
+    opacity: 1;
+    box-shadow: 0 0 0 3px;
+    border-radius: 5px;
+}
+
+.nav__brand{
+    transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+    .nav__toggler{
+        display: none;
+    }
+
+    .nav__list{
+        display: flex;
+        width: auto;
+        border: 0;
+        font-size: 1.6rem;
+        max-height: 100vh;
+        opacity: 100%;
+    }
+}
+
+
 @media screen and (min-width: 1024px) {
 
 }
