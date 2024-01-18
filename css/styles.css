@@ -220,10 +220,18 @@ a {
     font-weight: 600;
     padding: 2rem 3rem;
     margin: 1rem 0;
+    outline: 0;
     /* 文字居中 */
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn--primary {
@@ -305,7 +313,7 @@ a {
 
 .input-group .input {
     border: 0;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
     /* 开启flex之后，让input部分沾满剩余空间 */
     flex-grow: 1;
 }
@@ -735,10 +743,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-    
-}
-
-@media screen and (min-width: 1024px) {
     .hero__content{
         text-align: left;
         align-self: center;
@@ -747,4 +751,35 @@ a {
     .hero{
         padding-top: 0;
     }
+}
+
+/* Domain block */
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    max-width: 670px;
+    margin: 4rem auto;
+}
+
+.block-domain__prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .block-domain__prices{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
 }
