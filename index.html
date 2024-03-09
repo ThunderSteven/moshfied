@@ -17,7 +17,54 @@
     <!-- <link rel="stylesheet" href="mosh-styles.css" /> -->
   </head>
   <body>
-    
+    <section class="block block--dark block--screwed-right display">
+      <div class="grid grid--1x2 container">
+        <picture>
+          <source
+            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+            type="image/png"
+          />
+          <img class="hero__image" src="/images/ipad.png" alt="" />
+        </picture>
+        <article class="grid grid--1x3">
+          <grid1 class="display__heading__content grid grid--1x2">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#easy"></use>
+              </svg>
+            </span>
+            <body>
+              <h3 class="display__heading">Easy Start & Managed Updates</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, molestiae vel! Quas, tempora praesentium? Dolorum,
+                voluptatum error! Doloribus, nemo voluptates.
+              </p>
+            </body>
+          </grid1>
+          <grid2>
+            <h3 class="display__heading">Staging, GIT & WP-CLI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, molestiae vel! Quas, tempora praesentium? Dolorum,
+              voluptatum error! Doloribus, nemo voluptates.
+            </p>
+          </grid2>
+          <grid3>
+            <h3 class="display__heading">Dynamic Caching & More</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, molestiae vel! Quas, tempora praesentium? Dolorum,
+              voluptatum error! Doloribus, nemo voluptates.
+            </p>
+          </grid3>
+        </article>
+      </div>
+    </section>
   </body>
   <script src="/js/main.js"></script>
 </html>

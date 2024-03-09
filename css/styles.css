@@ -831,6 +831,17 @@ a {
     }
 }
 
+/* Display */
+.display__heading{
+    color: white;
+}
+
+.display__heading__content .grid--1x2 {
+    display: grid;
+    grid-template-columns: auto auto; /* 三列，每列寬度自適應內容 */
+  }
+
+
 @media screen and (min-width: 1024px) {
 
 }
